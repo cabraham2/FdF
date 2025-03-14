@@ -90,7 +90,7 @@ void	setup_hooks(t_fdf *data)
 {
 	mlx_mouse_hook(data->win_ptr, handle_mouse, data);
 	mlx_hook(data->win_ptr, KeyPress, KeyPressMask, handle_keypress, data);
-	mlx_hook(data->win_ptr, Event_close, 0, handle_close, data);
+	mlx_hook(data->win_ptr, EVENT_CLOSE, 0, handle_close, data);
 }
 
 int	data_init(t_fdf *data)
